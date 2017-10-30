@@ -1,0 +1,17 @@
+{
+    "token": "YOUR_SLACK_BOT_TOKEN",
+    "gerrit_url": "https://url.to.your.gerrit.com",
+    "gerrit_user_name": "your gerrit user name",
+    "gerrit_user_password": "your gerrit HTTP password",
+    "projects": [
+        {
+            "name": "project name",
+            "reviewers": [
+                {
+                    "gerrit_email": "reviewer #1 gerrit email",
+                    "slack_name": "reviewer #1 slack name"
+                }
+            ]
+        }
+    ]
+}
