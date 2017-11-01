@@ -13,7 +13,7 @@ func check(e error) {
 }
 
 func handleMessage(ev *slack.MessageEvent, config *Config, rtm *slack.RTM) {
-	changeIDs := findChangeIDs(config.GerritURL, ev.Text)
+	changeIDs := FindChangeIDs(config.GerritURL, ev.Text)
 	for _, changeID := range changeIDs {
 		answerer := SlackChannelAnswerer{RTM: rtm, Channel: ev.Channel}
 
